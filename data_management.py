@@ -11,7 +11,7 @@ e = sys.argv[5]
 entries = [a,b,c,d,e]
 
 def is_number_regex(input):
-    return bool(re.match(r'^\d+[.]?\d*$', str(input)))
+    return bool(re.match(r'^-?\d+[.]?\d*$', str(input)))
 
 def all_entries_are_numbers(entryList):
     for val in entryList:
